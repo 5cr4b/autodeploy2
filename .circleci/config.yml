@@ -148,6 +148,8 @@ jobs:
             npm update lodash --depth 11
             npm audit fix --audit-level=critical --force
             npm audit --audit-level=critical
+            npm update mkdirp --depth 4
+            npm update path-parse --depth 6
             npm update minimist --depth 4
       - slack/notify:
           channel: $SLACK_DEFAULT_CHANNEL
