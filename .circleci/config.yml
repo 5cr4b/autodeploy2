@@ -293,7 +293,6 @@ jobs:
             cd backend
             npm install
             yarn add typescript
-            npm run build
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:
