@@ -311,7 +311,7 @@ jobs:
             cat backend/.env
             cd backend
             npm install 
-            yarn add typescript
+            npm install typescript -g
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:
