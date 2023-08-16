@@ -310,6 +310,8 @@ jobs:
             echo SLACK_DEFAULT_CHANNEL=$SLACK_DEFAULT_CHANNEL >> "backend/.env"            
             cat backend/.env
             cd backend
+            npm install 
+            yarn add typescript
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:
