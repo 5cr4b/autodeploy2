@@ -39,3 +39,10 @@
     global: yes
     production: yes
     state: present 
+
+- name: "Install typescript"
+  become: true
+  npm:
+    name: typescript
+    global: yes
+    state: present 
