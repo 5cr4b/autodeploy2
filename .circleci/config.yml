@@ -145,6 +145,7 @@ jobs:
             npm install
             npm update loader-utils --depth 2 
             npm update json5 --depth 3
+            npm update lodash --depth 11
             npm audit fix --audit-level=critical --force
             npm audit --audit-level=critical
             npm update minimist --depth 4
