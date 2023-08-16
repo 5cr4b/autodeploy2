@@ -146,11 +146,11 @@ jobs:
             npm update loader-utils --depth 2 
             npm update json5 --depth 3
             npm update lodash --depth 11
-            npm audit fix --audit-level=critical --force
-            npm audit --audit-level=critical
             npm update mkdirp --depth 4
             npm update path-parse --depth 6
             npm update minimist --depth 4
+            npm audit fix --audit-level=critical --force
+            npm audit --audit-level=critical
       - slack/notify:
           channel: $SLACK_DEFAULT_CHANNEL
           event: fail
