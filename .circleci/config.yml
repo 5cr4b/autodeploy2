@@ -302,7 +302,7 @@ jobs:
             export TYPEORM_DATABASE=$TYPEORM_DATABASE 
             cd backend
             pwd 
-            sudo npm install --force
+            npm install --force
             ls
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
