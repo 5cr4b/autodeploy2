@@ -282,7 +282,7 @@ jobs:
   run-migrations:
     docker:
       # Docker image here that supports NodeJS
-        - image: circleci/node:12.22.9
+        - image: circleci/node:13.8.0
     steps:
       # Checkout code from git
       - checkout
@@ -303,7 +303,7 @@ jobs:
             cd backend
             pwd 
             npm install --force
-            ls node_modules/typescript/bin
+            ls node_modules/
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:

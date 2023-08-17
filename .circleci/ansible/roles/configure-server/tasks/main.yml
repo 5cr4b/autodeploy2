@@ -27,7 +27,7 @@
     name: n
     global: yes
     production: yes
-
+cd 
   
 - name: "Install pm2"
   become: true
