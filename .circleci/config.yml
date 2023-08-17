@@ -291,7 +291,7 @@ jobs:
           name: Run migrations
           command: |         
             cd backend
-            pwd & ls al
+            pwd 
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:
