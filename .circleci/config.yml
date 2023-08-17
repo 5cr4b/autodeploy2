@@ -303,7 +303,7 @@ jobs:
             cd backend
             pwd 
             npm install --force
-            ls
+            ls node_modules/typescript/bin
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:
