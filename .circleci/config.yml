@@ -289,9 +289,21 @@ jobs:
       - checkout
       - run:
           name: Run migrations
-          command: |         
+          command: |        
+            export ENVIRONMENT=production
+            export NODE_ENV=production
+            export TYPEORM_CONNECTION=postgres
+            export TYPEORM_MIGRATIONS_DIR=./src/migrations
+            export TYPEORM_ENTITIES=./src/modules/**/*.entity.ts
+            export TYPEORM_MIGRATIONS=./src/migrations/*.ts
+            export TYPEORM_HOST=$TYPEORM_HOST
+            export TYPEORM_PORT=5432
+            export TYPEORM_USERNAME=$TYPEORM_USERNAME
+            export TYPEORM_PASSWORD=$TYPEORM_PASSWORD
+            export TYPEORM_DATABASE=$TYPEORM_DATABASE 
             cd backend
             pwd 
+            npm install --force
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:
