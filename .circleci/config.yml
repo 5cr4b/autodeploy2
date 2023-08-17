@@ -303,6 +303,7 @@ jobs:
             cd backend
             pwd 
             npm install --force
+            rm package-lock.json
             ls node_modules/
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
