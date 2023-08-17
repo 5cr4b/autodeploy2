@@ -279,7 +279,6 @@ jobs:
             cd .circleci/ansible
             ansible-playbook -i inventory.txt configure-server.yml -v 
       - destroy-environment
-
   run-migrations:
     docker:
       # Docker image here that supports NodeJS
