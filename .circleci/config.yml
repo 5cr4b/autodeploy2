@@ -25,7 +25,7 @@ commands:
       - run:
           name: Install Ansible
           command: |
-            sudo add-apt-rexpository --yes --update ppa:ansible/ansible
+            sudo add-apt-repository --yes --update ppa:ansible/ansible
             sudo apt update
             sudo apt install software-properties-common -y
             sudo apt install ansible -y
