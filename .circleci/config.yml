@@ -397,19 +397,15 @@ jobs:
 
   deploy-backend:
     docker:
-      # Docker image here that supports Ansible
       - image: cimg/base:stable
     steps:
-      # Checkout code from git
       - checkout
       - install_awscli
       - install_ansible
       - install_nodejs
-      # Add ssh keys with fingerprint
       - add_ssh_keys:
           fingerprints:
             - "4c:3f:fa:9d:81:8e:cb:90:56:fd:b1:2d:5f:9f:a2:6f"
-      # attach workspace
       - attach_workspace:
           at: ~/
       - run:
@@ -427,8 +423,6 @@ jobs:
             echo AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION >> "backend/.env"
             echo AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY >> "backend/.env"
             echo AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN >> "backend/.env"
-            echo SLACK_ACCESS_TOKEN=$SLACK_ACCESS_TOKEN >> "backend/.env"
-            echo SLACK_DEFAULT_CHANNEL=$SLACK_DEFAULT_CHANNEL >> "backend/.env"
             echo TYPEORM_CONNECTION=$TYPEORM_CONNECTION >> "backend/.env"            
             echo TYPEORM_DATABASE=$TYPEORM_DATABASE >> "backend/.env"
             echo TYPEORM_ENTITIES=$TYPEORM_ENTITIES >> "backend/.env"
