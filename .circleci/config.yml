@@ -402,7 +402,7 @@ jobs:
       - checkout
       - install_awscli
       - install_ansible
-      - install_nodejs
+      #- install_nodejs
       - add_ssh_keys:
           fingerprints:
             - "52:94:e8:3a:80:aa:5b:64:4d:94:a2:0e:7c:89:64:91"
