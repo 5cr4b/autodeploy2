@@ -402,7 +402,7 @@ jobs:
     steps:
       - checkout
       - install_awscli
-      #- install_ansible
+      - install_ansible
       #- install_nodejs
       - add_ssh_keys:
           fingerprints:
