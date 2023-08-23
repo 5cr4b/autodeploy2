@@ -384,15 +384,14 @@ jobs:
             npm run build
             tar -czvf artifact-"${CIRCLE_WORKFLOW_ID:0:7}".tar.gz dist
             aws s3 cp dist s3://udapeople-${CIRCLE_WORKFLOW_ID:0:7} --recursive
-      #- slack/notify:
-      #    event: fail
-      #    channel: circleci-nambv6
-      #    template: basic_fail_1
-      #- slack/notify:
-      #    event: pass
-      #    channel: circleci-nambv6
-      #    template: basic_success_1
-      # Here's where you will add some code to rollback on failure
+      - slack/notify:
+          event: fail
+          channel: $SLACK_DEFAULT_CHANNEL
+          template: basic_fail_1
+      - slack/notify:
+          event: pass
+          channel: $SLACK_DEFAULT_CHANNEL
+          template: basic_success_1
       - destroy-environment
       - revert-migrations
 
@@ -459,15 +458,14 @@ jobs:
             cat inventory.txt
             export ANSIBLE_HOST_KEY_CHECKING=False
             ansible-playbook -i inventory.txt deploy-backend.yml
-      #- slack/notify:
-      #    event: fail
-      #    channel: circleci-nambv6    
-      #    template: basic_fail_1
-      #- slack/notify:
-      #    event: pass
-      #    channel: circleci-nambv6
-      #    template: basic_success_1
-      # Here's where you will add some code to rollback on failure
+      - slack/notify:
+          event: fail
+          channel: $SLACK_DEFAULT_CHANNEL   
+          template: basic_fail_1
+      - slack/notify:
+          event: pass
+          channel: $SLACK_DEFAULT_CHANNEL
+          template: basic_success_1
       - destroy-environment
       - revert-migrations
 
