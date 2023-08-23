@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getDateFromString = exports.SalaryType = exports.Gender = exports.Employee = void 0;
 const moment = require("moment-timezone");
 const entities_1 = require("../../../common/entities");
 const typeorm_1 = require("typeorm");

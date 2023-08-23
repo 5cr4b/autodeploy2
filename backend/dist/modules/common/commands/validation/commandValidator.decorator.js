@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CommandValidator = void 0;
 require("reflect-metadata");
 const constants_1 = require("../constants");
 exports.CommandValidator = (command) => {

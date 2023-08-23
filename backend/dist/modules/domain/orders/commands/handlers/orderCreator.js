@@ -18,7 +18,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.OrderCreator = void 0;
 const createOrder_1 = require("../createOrder");
 const commands_1 = require("../../../../common/commands");
 const orderRepository_1 = require("../../repositories/orderRepository");

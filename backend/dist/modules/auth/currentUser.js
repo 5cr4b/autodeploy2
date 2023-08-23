@@ -12,7 +12,6 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CurrentUser = void 0;
 const core_1 = require("@nestjs/core");
 const common_1 = require("@nestjs/common");
 let CurrentUser = class CurrentUser {

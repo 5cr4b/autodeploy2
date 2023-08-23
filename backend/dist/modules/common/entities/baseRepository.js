@@ -21,7 +21,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BaseRepository = exports.PaginateResult = void 0;
 const typeorm_1 = require("typeorm");
 const events_1 = require("../events");
 const typeorm_2 = require("@nestjs/typeorm");

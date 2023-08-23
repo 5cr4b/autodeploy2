@@ -21,7 +21,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.EmployeeController = void 0;
 const common_1 = require("@nestjs/common");
 const commands_1 = require("../../common/commands");
 const create_employee_command_1 = require("./commands/create-employee.command");

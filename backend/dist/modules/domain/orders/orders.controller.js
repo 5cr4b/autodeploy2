@@ -21,7 +21,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.OrdersController = void 0;
 const commands_1 = require("../../common/commands");
 const common_1 = require("@nestjs/common");
 const createOrder_1 = require("./commands/createOrder");

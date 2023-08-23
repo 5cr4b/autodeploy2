@@ -18,7 +18,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.EmployeeCompanyEmailUpdater = void 0;
 const commands_1 = require("../../../../common/commands");
 const update_employee_company_email_command_1 = require("../update-employee-company-email.command");
 const cqrs_1 = require("@nestjs/cqrs");

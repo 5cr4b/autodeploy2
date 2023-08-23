@@ -12,7 +12,6 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProductRepository = void 0;
 const entities_1 = require("../../../common/entities");
 const product_entity_1 = require("../entities/product.entity");
 const events_1 = require("../../../common/events");

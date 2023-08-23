@@ -21,7 +21,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.EmployeeRepository = void 0;
 const entities_1 = require("../../../common/entities");
 const events_1 = require("../../../common/events");
 const typeorm_1 = require("typeorm");

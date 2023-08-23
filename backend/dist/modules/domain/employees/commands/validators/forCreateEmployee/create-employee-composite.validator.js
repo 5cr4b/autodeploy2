@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateEmployeeCompositeValidator = void 0;
 const validation_1 = require("../../../../../common/commands/validation");
 const CompositeValidator_1 = require("../../../../../common/commands/validation/CompositeValidator");
 const create_employee_command_1 = require("../../create-employee.command");

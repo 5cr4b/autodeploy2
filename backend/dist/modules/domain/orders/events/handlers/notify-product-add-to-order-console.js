@@ -6,7 +6,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NotifyProductAddToOrderConsole = void 0;
 const ProductAddedToOrder_1 = require("../ProductAddedToOrder");
 const cqrs_1 = require("@nestjs/cqrs");
 let NotifyProductAddToOrderConsole = class NotifyProductAddToOrderConsole {

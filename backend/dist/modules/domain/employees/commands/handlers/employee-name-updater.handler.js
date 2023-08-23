@@ -18,7 +18,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.EmployeeNameUpdater = void 0;
 const commands_1 = require("../../../../common/commands");
 const update_employee_name_command_1 = require("../update-employee-name.command");
 const cqrs_1 = require("@nestjs/cqrs");

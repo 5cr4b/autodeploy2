@@ -6,7 +6,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NotifyEmployeeCreatedConsole = void 0;
 const cqrs_1 = require("@nestjs/cqrs");
 const employee_created_event_1 = require("../employee-created.event");
 let NotifyEmployeeCreatedConsole = class NotifyEmployeeCreatedConsole {

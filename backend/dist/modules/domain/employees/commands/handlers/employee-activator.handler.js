@@ -18,7 +18,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.EmployeeActivator = void 0;
 const activate_employee_command_1 = require("../activate-employee.command");
 const commands_1 = require("../../../../common/commands");
 const cqrs_1 = require("@nestjs/cqrs");
