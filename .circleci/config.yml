@@ -497,9 +497,9 @@ jobs:
             echo "${API_URL}"  #   curl -s ${API_URL}/api/status -v 
             if curl -s ${API_URL}/api/status | grep "ok"
             then
-              exit 0
-            else
               exit 1
+            else
+              exit 0
             fi       
 
       - run:
@@ -510,9 +510,9 @@ jobs:
             if curl -s ${URL} | grep "Welcome"
             then
                 # Change this to 0 after the job fails
-              exit 0
-            else
               exit 1
+            else
+              exit 0
             fi
 
    
@@ -560,7 +560,7 @@ jobs:
             echo Stack names: "${STACKS[@]}"
             if [[ ${STACKS[@]} =~ "${OldWorkflowID}" ]]
             then
-              aws --region us-west-2 s3 rm "s3://udapeople-${OldWorkflowID}" --recursive
+              aws  s3 rm "s3://udapeople-${OldWorkflowID}" --recursive
               aws --region us-west-2 cloudformation delete-stack --stack-name "udapeople-backend-${OldWorkflowID}"
               aws --region us-west-2 cloudformation delete-stack --stack-name "udapeople-frontend-${OldWorkflowID}"
               echo "=======================Delete Confirmed========================"
